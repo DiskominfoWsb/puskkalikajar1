@@ -6,17 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puskesmas Kalikajar 1 Wonosobo</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/split-type"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>
 
     <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
             <div class="flex items-center justify-between relative">
-                    <img class="max-w-xs px-8 scale-90 hover:scale-125 duration-500" src="images/logopkm.png" alt="home"/>    
+                <div class="">
+                    <img class="max-w-xs px-8" src="images/logopkm.png"/>    
+                </div>
                 <div class="flex items-center px-4">
                     <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
                         <span class="w-[30px] h-[2px] my-2 block bg-black transition duration-300 ease-in-out origin-top-left"></span>
@@ -27,7 +26,7 @@
                     <nav id="nav-menu" class="hidden absolute py-5 bg-slate-500 shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
                         <ul class="block lg:flex">
                             <li class="group">
-                                <a href="#home" class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500 hover:underline">Beranda</a>
+                                <a href="index.html" class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500 hover:underline">Beranda</a>
                             </li>
                             <li class="group">
                                 <a href="#Tentang" class="text-base text-black py-2 mx-8 flex group-hover:text-teal-500 hover:underline">Tentang Kami</a>
@@ -51,31 +50,17 @@
         </div>
     </header>
 
-    <section id="home" class="pt-32">
+    <section id="about" class="pb-10 pt-10 mt-10">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-2 lg:w-1/2">
-                    <h1 class="text-base font-semibold text-teal-500 text-primary md:text-xl lg:text-2xl">SELAMAT DATANG, 
-                    <h1 id="animation" class="font-bold text-slate-900 text-3xl mt-1 lg:text-5xl" style="clip-path: polygon(0 0, 100% 0, 100% 100%,0% 100%);">PUSKESMAS KALIKAJAR 1</h1>
-                    <h2 class="font-medium text-slate-700 text-lg mt-2">Jalan Letda Sudarmono No 57 Kalikajar</h2>
-                    <P class="font-medium text-slate-700 mb-0 leading-relaxed">Kalikajar, Wonosobo, Jawa Tengah</P>
-                    <p class="font-medium text-slate-400 leading-relaxed max-w-md hover:underline hover:text-teal-500">Kami Siap dan Bangga Melayani</p>
-                    <h1>-------------------------------------------</h1>
-                    <div class="flex items-center">
-                        <a href="Struktur.html" class="w-11 h-11 mr-4 rounded-full flex justify-center items-center border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white"><svg role="img" width="30" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Struktur Organisasi</title><path d="M17.12 7.694c4.3.056 6.808 2.693 3.96 6.3-1.307 1.662-3.517 3.303-6.465 4.373l-.422.144c-.278.09-.553.173-.823.258-.638.18-1.26.34-1.863.455-.645.134-1.268.229-1.87.298-.43.042-.844.07-1.245.078-2.743.07-4.806-.68-5.477-2.285-.81-1.919.83-4.592 4.116-6.627C4.597 11.661.188 13.96 0 17.256v.404a4.307 4.307 0 0 0 .193 1.029c.7 2.228 4.003 3.267 8.21 2.894a19.43 19.43 0 0 0 1.244-.147 24.08 24.08 0 0 0 3.733-.874c.137-.05.275-.09.414-.14.283-.09.561-.184.831-.29 3.64-1.322 6.342-3.087 7.921-5.101.898-1.155 1.364-2.236 1.454-3.185v-.723c-.26-2.403-3.064-3.815-6.88-3.43zm-2.788-1.192a1.237 1.237 0 0 0 .283-.033c.61-.152.908-.803.934-1.572.028-.815-.257-1.495-.934-1.592a.826.826 0 0 0-.18 0 1.111 1.111 0 0 0-1.065.79 2.526 2.526 0 0 0-.154.815 2.192 2.192 0 0 0 .154.954.993.993 0 0 0 .962.638zm-.013.273a2.946 2.946 0 0 0-.7.075l.057.077.103.185.085.196.07.2.046.206.036.208.02.217v.427l-.015.216v.213l-.028.216-.029.214-.041.216-.041.214-.041.208-.05.208-.04.201-.05.193-.048.188-.049.18-.041.172-.041.165-.02.105-.03.116-.025.126-.023.131-.026.14-.02.118v.025l-.029.155-.028.151-.02.16-.037.175-.02.167-.028.165-.021.175-.026.164-.023.175-.02.173-.021.172c.041.5.077.921.098 1.163a1.253 1.253 0 0 0 .167.61.772.772 0 0 0 .648.295.947.947 0 0 0 .597-.213 1.178 1.178 0 0 0 .278-.692c.11-.713.43-3.054.705-4.057.396-1.446 1.343-4.078-.983-4.278a2.259 2.259 0 0 0-.296-.016zm-2.83-.743h.016c.9 0 1.322-.829 1.322-1.84 0-1.01-.42-1.842-1.32-1.85h-.018c-.913 0-1.335.831-1.335 1.85 0 1.019.425 1.84 1.335 1.84zm-1.852 4.273c.082.352.167.679.237.97.283 1.155.56 3.84.663 4.65.103.811.389.991.97 1.045.574-.054.865-.226.963-1.044.097-.818.38-3.496.656-4.651.069-.291.159-.618.257-.97.257-1.06.463-2.316 0-3.108-.299-.515-.867-.854-1.863-.854-.995 0-1.58.34-1.87.854-.476.803-.27 2.048-.013 3.108zM8.402 6.469a1.237 1.237 0 0 0 .283.033.993.993 0 0 0 .952-.65 2.403 2.403 0 0 0 .152-.955 2.673 2.673 0 0 0-.152-.815 1.122 1.122 0 0 0-1.065-.79.803.803 0 0 0-.18 0c-.672.098-.962.772-.937 1.592.021.782.327 1.433.947 1.585zm-.288 8.654a1.13 1.13 0 0 0 .288.692.944.944 0 0 0 .594.214.772.772 0 0 0 .651-.296 1.451 1.451 0 0 0 .168-.61l.095-1.155v-.015l-.02-.173-.021-.172-.029-.175-.02-.165-.02-.175-.027-.164-.033-.157-.026-.165-.026-.17-.02-.151-.028-.155v-.02L9.616 12l-.028-.14-.028-.131-.02-.126-.026-.116-.029-.105-.036-.165-.049-.172-.04-.18-.047-.188-.049-.193-.049-.2-.041-.222-.049-.208-.041-.214-.036-.214-.026-.213-.028-.216-.02-.214V8.14l.02-.216.033-.208.05-.206.061-.2.09-.196.105-.186.055-.077a2.977 2.977 0 0 0-.7-.074 2.218 2.218 0 0 0-.296 0c-2.315.2-1.379 2.83-.983 4.278.275 1.014.594 3.355.705 4.067z"/></svg></a>
-                        <a href="Geografis.html" class="w-11 h-11 mr-4 rounded-full flex justify-center items-center border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white"><svg role="img" width="30" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Geografis Puskesmas</title><path stroke="currentColor" stroke-linecap="round" stroke-width="0.6" d="M4.4 7.7c2 .5 2.4 2.8 3.2 3.8 1 1.4 2 1.3 3.2 2.7 1.8 2.3 1.3 5.7 1.3 6.7M20 15h-1a4 4 0 0 0-4 4v1M8.6 4c0 .8.1 1.9 1.5 2.6 1.4.7 3 .3 3 2.3 0 .3 0 2 1.9 2 2 0 2-1.7 2-2 0-.6.5-.9 1.2-.9H20m1 4a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></a>
-                        <a href="StandarPelayanan.html" class="w-11 h-11 mr-4 rounded-full flex justify-center items-center border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white"><svg role="img" width="30" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Standar Pelayanan</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h8m-8 6h8m-8 6h8M4 16a2 2 0 1 1 3.3 1.5L4 20h5M4 5l2-1v6m-2 0h4"/></svg></a>
-                        <a href="TataNilai.html" class="w-11 h-11 mr-4 rounded-full flex justify-center items-center border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white" aria-hidden="true" fill="none" viewBox="0 0 24 24"><svg role="img" width="30" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Tata Nilai</title><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6.2V5h11v1.2M8 5v14m-3 0h6m2-6.8V11h8v1.2M17 11v8m-1.5 0h3"/></svg></a>
-                        <a href="Jadwal.html" class="w-11 h-11 mr-4 rounded-full flex justify-center items-center border border-slate-600 hover:border-teal-500 hover:bg-teal-500 hover:text-white"><svg role="img" width="30" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Jadwal Pelayanan</title><path d="M5.537.763c-1.167.7-2.21 1.582-3.08 2.61L3.79 4.836a10.422 10.422 0 013.627-2.881zm13.028.085l-1.991 1.12a10.381 10.381 0 013.762 3.07l1.18-1.654a12.371 12.371 0 00-2.95-2.536zm-6.564.752a9.788 9.788 0 00-4.131.91l.59 1.011a8.542 8.542 0 013.541-.762c1.261 0 2.457.274 3.534.76l.59-1.012a9.81 9.81 0 00-4.124-.907zM11.4 3.535l-.55 6.626h.003l-.002.04c.003.111.013.216.033.318.01.112.043.227.097.342.114.289.298.505.516.607.05.04.105.075.158.111a.98.98 0 01.033.02v.004l6.68 3.596.348-.476-6.058-4.6c-.007 0-.01-.005-.014-.008L12 3.535zm1.423.052c.19.234.361.523.502.855 3.155.604 5.54 3.325 5.54 6.596 0 .877-.176 1.712-.484 2.48a3.7 3.7 0 01.52.76 7.314 7.314 0 00.754-3.24c0-3.868-2.99-7.05-6.832-7.45zm-2.284.095c-3.527.667-6.19 3.708-6.19 7.356 0 2.584 1.335 4.863 3.367 6.21a9.84 9.84 0 01.295-.743c-1.74-1.219-2.874-3.214-2.874-5.467 0-3.054 2.082-5.632 4.932-6.45.128-.351.289-.656.47-.906zm9.15 1.675l-.801.893a8.101 8.101 0 011.551 4.777c0 2.916-1.542 5.481-3.872 6.952.104.388.188.792.251 1.209 2.87-1.632 4.802-4.677 4.802-8.16a9.224 9.224 0 00-1.93-5.67zm-15.38.007a9.25 9.25 0 00-1.93 5.665c0 3.507 1.954 6.567 4.858 8.19.063-.418.144-.822.248-1.206-2.36-1.468-3.923-4.045-3.923-6.984 0-1.777.573-3.422 1.549-4.772zm9.314.043c.044.203.08.416.107.64a5.332 5.332 0 013.213 2.912l.577-.148a5.942 5.942 0 00-3.897-3.404zm-3.816.187a5.939 5.939 0 00-3.319 3.198l.58.148A5.324 5.324 0 019.73 6.257c.017-.227.04-.45.077-.663zM6.733 9.672l-.62.63.315.614 1.727.618.942-.618-.312-.923zm10.615 0l-2.048.321-.315.923.942.618 1.73-.618.315-.614zM6.1 11.869A5.824 5.824 0 008.42 15.7c.1-.17.204-.335.315-.493a5.252 5.252 0 01-2.038-3.34zm11.206 0c-.03.18-.071.355-.118.529.174.138.338.272.493.41.097-.302.174-.617.22-.94zm-15.679.217L0 14.158c.966 3.661 3.638 6.65 7.132 8.111a9.399 9.399 0 01-.05-1.031c0-.375.017-.747.05-1.111-3.024-1.563-5.166-4.544-5.505-8.041zm20.707.055c-.352 3.45-2.464 6.394-5.441 7.957.033.374.05.755.053 1.136 0 .377-.017.71-.05 1.005 3.506-1.488 6.175-4.522 7.104-8.223zm-6.544 2.617a5.31 5.31 0 01-.486.42c.11.158.218.322.318.493.265-.2.513-.42.74-.66a10.61 10.61 0 01-.572-.253zm1.502.559a6.9 6.9 0 01-1.25 1.156c.106.236.207.485.294.741a7.667 7.667 0 001.857-1.772 3.554 3.554 0 01-.9-.125zm-2.988.63l-2.303.913-2.307-.91-.587 1.435 2.448.946c-.134.46-.568.798-1.08.798-.034 0-.07-.004-.104-.007l-.5.686c.188.063.39.096.6.096.621 0 1.17-.289 1.52-.738a1.924 1.924 0 002.183.62l-.49-.67a1.122 1.122 0 01-1.26-.805l2.47-.926zm1.156 4.775c-1.09.377-2.256.58-3.476.58-1.17 0-2.29-.186-3.34-.534.231.88.59 1.654 1.05 2.262.743.134 1.509.207 2.294.207.835 0 1.65-.082 2.437-.236.453-.61.807-1.39 1.035-2.28z"/></svg></a>
-                    </div>
+                <div class="w-full px-5 lg:w-1/2">
+                    <img class="rounded-md mt-4 mb-4 pb-4 pt-4 scale-90 hover:scale-125 duration-500" src="images/TN.png" alt="landing page" width="max-w-full"/>
                 </div>
-                <div class="w-full self-end px-2 mb-4 lg:w-1/2">
-                    <div class="relative mt-8 lg:mt-9 lg:right-0">
-                        <img src="images/andre.png" alt="home" class="max-w-full mx-auto mb-2 scale-90 hover:scale-125 duration-500"/>
-                    </div>
+                <div class="w-full px-5 lg:w-1/2">
+                    <img class="rounded-md mt-4 mb-4 pb-4 pt-4 scale-90 hover:scale-125 duration-500" src="images/VM.png" alt="landing page" width="max-w-full"/>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
 
     <section id="about" class="pb-10 pt-10 bg-slate-200">
@@ -83,7 +68,7 @@
                 <div class="flex flex-wrap">
                     <div class="w-full px-5 lg:w-1/2">
                         <h4 class="font-bold uppercase text-center text-teal-500 text-lg mb-2">VISI</h4>
-                        <h2 class="select-none font-medium text-center text-xl mb-3 max-w-xl">MENJADI PUSKESMAS YANG BERKUALITAS MENUJU TERWUJUDNYA MASYARAKAT SEHAT DAN MANDIRI</h2>
+                        <h2 class="font-medium text-center text-xl mb-3 max-w-xl">MENJADI PUSKESMAS YANG BERKUALITAS MENUJU TERWUJUDNYA MASYARAKAT SEHAT DAN MANDIRI</h2>
                         <P class="text-base text-slate-400 max-w-md mb-10"></P>
                     </div>
                     <div class="w-full px-5 lg:w-1/2">
@@ -101,13 +86,13 @@
                 </div>
             </div>
     </section>
-    
+
     <section id="slider" class="pt-20 pb-2 mt-4">
         <div class="container mb-2 px-5 md:w-1/2">
             <!-- Implement the carousel -->
             <div class="relative w-[600px] mx-auto">
                 <div class="slide relative">
-                    <img class="aspect-auto w-full h-[300px] object-cover rounded-lg" src="images/apel.jpg">
+                    <img class="w-full h-[300px] object-cover rounded-lg" src="images/apel.jpg">
                 </div>
 
                 <div class="slide relative">
@@ -116,27 +101,27 @@
 
                 <div class="slide relative">
                     <img class="w-full h-[300px] object-cover rounded-md" src="images/PPI.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 rounded-lg text-center text-white">IN HOUSE TRAINING PPI</div>
+                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">IN HOUSE TRAINING PPI</div>
                 </div>
 
                 <div class="slide relative">
                     <img class="w-full h-[300px] object-cover rounded-md" src="images/iht1.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 rounded-lg text-center text-white">IN HOUSE TRAINING SPILL KIT</div>
+                    <div class="absolute bottom-0 w-full px-5 py-3 bg-black/40 text-center text-white">IN HOUSE TRAINING SPILL KIT</div>
                 </div>
 
                 <div class="slide relative">
                     <img class="w-full h-[300px] object-cover rounded-md" src="images/iht2.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 rounded-lg text-center text-white">IN HOUSE TRAINING APAR</div>
+                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 text-center text-white">IN HOUSE TRAINING APAR</div>
                 </div>
 
                 <div class="slide relative">
                     <img class="w-full h-[300px] object-cover rounded-md" src="images/KB1.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 rounded-lg text-center text-white">KAJI BANDING ERM</div>
+                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 text-center text-white">KAJI BANDING ERM</div>
                 </div>
 
                 <div class="slide relative">
                     <img class="w-full h-[300px] object-cover rounded-md" src="images/KB2.jpg">
-                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 rounded-lg text-center text-white">KAJI BANDING ERM</div>
+                    <div class="absolute bottom-0 w-full px-5 py-4 bg-black/40 text-center text-white">KAJI BANDING ERM</div>
                 </div>
 
                 <!-- The previous button -->
@@ -209,7 +194,7 @@
             <div class="w-full px-20">
                 <div class="max-w-7xl mx-auto text-center mt-5 mb-5">
                     <h1 class="font-bold uppercase text-lg text-teal-500">Tentang Puskesmas Kalikajar 1</h1>
-                    <h2 class="select-none">Puskesmas adalah unit pelaksana teknis dinas kesehatan kabupaten / kota yang bertanggung jawab menyelenggarakan pembangunan kesehatan di suatu wilayah kerja tertentu. Puskesmas dibangun dalam rangka pemerataan pelayanan kesehatan dan pembinaan kesehatan masyarakat. Puskesmas berfungsi sebagai : pusat penggerak pembangunan berwawasan kesehatan, pusat pemberdayaan keluarga dan masyarakat, serta pusat pelayanan kesehatan strata pertama. Mempertimbangkan rumusan pokok – pokok program dan program – program unggulan sebagaimana disebutkan dalam Rencana Strategis Departemen Kesehatan dan program spesifik daerah, maka area program yang akan menjadi prioritas di suatu daerah, perlu dirumuskan secara spesifik oleh daerah sendiri demikian pula strategi dalam pencapaian tujuannya, yang harus disesuaikan dengan masalah, kebutuhan serta potensi setempat</h2>
+                    <h2>Puskesmas adalah unit pelaksana teknis dinas kesehatan kabupaten / kota yang bertanggung jawab menyelenggarakan pembangunan kesehatan di suatu wilayah kerja tertentu. Puskesmas dibangun dalam rangka pemerataan pelayanan kesehatan dan pembinaan kesehatan masyarakat. Puskesmas berfungsi sebagai : pusat penggerak pembangunan berwawasan kesehatan, pusat pemberdayaan keluarga dan masyarakat, serta pusat pelayanan kesehatan strata pertama. Mempertimbangkan rumusan pokok – pokok program dan program – program unggulan sebagaimana disebutkan dalam Rencana Strategis Departemen Kesehatan dan program spesifik daerah, maka area program yang akan menjadi prioritas di suatu daerah, perlu dirumuskan secara spesifik oleh daerah sendiri demikian pula strategi dalam pencapaian tujuannya, yang harus disesuaikan dengan masalah, kebutuhan serta potensi setempat</h2>
                 </div>
             </div>
         </div>
@@ -224,14 +209,14 @@
                 </div>
             </div>
                 <div class="w-full px-5 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
-                    <div class="px-5 md:w-1/2"> 
+                    <div class="px-5 md:w-1/2">
                         <div class="max-w-2xl mt-2 mx-auto">
                             <div id="default-carousel" class="relative" data-carousel="static">
                                 <!-- Carousel wrapper -->
                                 <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                         <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"></span>
-                                        <img src="images/slider/FB1.jpg" class="aspect-auto rounded-xl block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                                        <img src="images/slider/FB1.jpg" class="rounded-xl block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                                     </div>
                                     <div class="hidden duration-700 ease-in-out" data-carousel-item>
                                         <span class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"></span>
@@ -561,27 +546,27 @@
                 <div class="max-w-full mx-auto text-center mb-16">
                     <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl text-teal-500">Topik Kesehatan</h2>
                     <p  class="font-medium text-md text-secondary md:text-lg ">Kami menyediakan topik kesehatan yang dapat anda kunjungi di blog kami</p>
-                    <a href="https://puskesmaskalikajar1wsb.blogspot.com" target="blanks" class="mb-5 font-semibold text-4xl hover:text-teal-500 truncate:">PUSKESMAS KALIKAJAR 1</a> 
+                    <a href="https://puskesmaskalikajar1wsb.blogspot.com" target="blanks" class="mb-5 font-semibold text-4xl hover:text-teal-500 truncate:"> PUSKESMAS KALIKAJAR 1</a> 
                 </div>
             </div>
             
             <div class="flex flex-wrap">
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bd-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img class="scale-90 hover:scale-100 ease-in duration-500 rounded-xl w-full" src="images/blogimsonia.png"/>
+                        <img src="images/blogimsonia.png" alt="Programming" class="w-full"/>
                             <div class="py-8 px-6">
                                 <h3>
-                                    <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-teal-500 truncate">Stunting</a> 
+                                    <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-teal-500 truncate">Insomnia</a> 
                                 </h3>
-                                <p class="font-medium mb-4">Bertepatan dengan perayaan Hari Gizi Nasional ke-63 pada tanggal 25 Januari 2022 yang lalu, Kementerian Kesehatan mengumumkan bahwa prevalensi stunting di Indonesia mengalami penurunan menjadi 21,6% setelah sebelumnya menyentuh angka 24,4% pada tahun 2021. Capaian tersebut merupakan hasil upaya Kemenkes </p>
-                                <a href="https://puskesmaskalikajar1wsb.blogspot.com/2024/01/gejala-stunting-yang-harus-diwaspadai.html" target="_blank" class="font-medium text-sm text-white bg-teal-500 py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
+                                <p class="font-medium mb-4">Insomnia adalah suatu keadaan yang menyebabkan seseorang mengalami kesulitan untuk tidur atau tidak dapat tidur dengan nyenyak. Tidak hanya pada usia dewasa maupun lansia, insomnia dapat menyerang semua golongan usia. Sehingga dengan demikian, penting bagi kita untuk bersegera dalam mengatasi insomnia.</p>
+                                <a href="https://puskesmaskalikajar1wsb.blogspot.com/2023/06/tips-mengatasi-insomnia.html" target="_blank" class="font-medium text-sm text-white bg-teal-500 py-2 px-4 rounded-lg hover:opacity-80">Baca Selengkapnya</a>
                             </div>
                     </div>
                 </div>
 
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bd-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img class="scale-90 hover:scale-100 ease-in duration-500 rounded-xl w-full" src="images/blogBad.png"/>
+                        <img src="images/blogBad.png" alt="Programming" class="w-full"/>
                             <div class="py-8 px-6">
                                 <h3>
                                     <a href="#" class="block mb-3 font-semibold text-xl text-dark hover:text-teal-500 truncate">Makanan Sehat</a> 
@@ -594,7 +579,7 @@
 
                 <div class="w-full px-4 lg:w-1/2 xl:w-1/3">
                     <div class="bd-white rounded-xl shadow-lg overflow-hidden mb-10">
-                        <img class="scale-90 hover:scale-100 ease-in duration-500 rounded-xl w-full" src="images/blogjantung.png"/>
+                        <img src="images/blogjantung.png" alt="Programming" class="w-full"/>
                             <div class="py-8 px-6">
                                 <h3>
                                     <a href="#" class="block mb-3 font-semibold text-xl text-dark   hover:text-teal-500 truncate">Serangan Jantung</a> 
@@ -627,9 +612,9 @@
     
     <section id="client" class="pt-10 pb-10 bg-slate-700">
         <div class="container mb-5 px-5 md:w-1/2">
-            <div class="w-full px-10">
-                <div class="mx-auto text-center mt-5 mb-5 scale-90 hover:scale-100 duration-500 rounded-xl">
-                    <img class="rounded-xl" src="images/maklumat.png" width="max-w-full"/>
+            <div class=" w-full px-10">
+                <div class="mx-auto text-center mt-5 mb-5 scale-90 hover:scale-125 duration-500">
+                    <img src="images/maklumat.png" alt="landing page" width="max-w-full"/>
                 </div>
             </div>
         </div>
@@ -682,6 +667,7 @@
                         </li>
                         <P>------------------</P>
                         <div>Kunjungan Web <div id="website-counter"></div></div>
+                        
                     </ul>
                 </div>
             </div>
@@ -701,7 +687,7 @@
     class="hidden fixed z-90 bottom-8 right-8 border-2 w-14 h-14 rounded-full drop-shadow-md bg-slate-600 text-white text-3xl font-bold">&#8673;
     </button>
 
-    <!-- Javascript code button-->
+    <!-- Javascript code -->
     <script>
         var toTopButton = document.getElementById("to-top-button");
 
@@ -718,23 +704,6 @@
         function goToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    </script>
-
-    <!-- Javascript code Text Reveal-->
-    <script>
-        let text = new SplitType('#animation')
-        let characters = document.querySelectorAll('.char')
-
-        for(i=0; i<characters.length; i++){
-            characters[i].classList.add('translate-y-full')
-        }
-
-        gsap.to('.char',{
-            y: 0,
-            stagger: 0.05,
-            delay: 0,
-            duration:0.5,
-        });
     </script>
 
 </body>
